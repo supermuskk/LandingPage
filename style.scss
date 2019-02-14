@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Marck+Script');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,600,700,900');
+@import url("https://fonts.googleapis.com/css?family=Marck+Script");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,600,700,900");
 
 // font-family: 'Marck Script', cursive;
 // font-family: 'Titillium Web', sans-serif;
@@ -88,12 +88,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -108,164 +108,213 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
-    font-family: 'Titillium Web', sans-serif;
+  line-height: 1;
+  font-family: "Titillium Web", sans-serif;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 $colorYelow: rgb(254, 209, 54);
+$colorparagraph: rgb(95, 95, 95);
 
 .jumbotron {
-    background-image: url(/images/hero.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
+  position: relative;
+  background-image: url(/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
 
+  .container {
     .navbar-default {
-        background-color: unset;
-        border: unset;
+      background-color: unset;
+      border: unset;
 
-        .navbar-brand {
-            color: $colorYelow;
-            font-family: 'Marck Script', cursive;
-            font-size: 40px;
+      .navbar-brand {
+        color: $colorYelow;
+        font-family: "Marck Script", cursive;
+        font-size: 40px;
+      }
+
+      .navbar-nav {
+        li {
+          a {
+            color: rgb(235, 235, 235);
+            text-transform: uppercase;
+            font-size: 20px;
+          }
         }
-
-        .navbar-nav {
-
-            li {
-
-
-                a {
-                    color: rgb(235, 235, 235);
-                    text-transform: uppercase;
-                    font-size: 20px;
-                }
-            }
-        }
+      }
     }
 
     .greeting {
-        padding-top: 30%;
+      position: absolute;
+      bottom: 50px;
+      left: 10px;
+      right: 10px;
 
-        p,
-        h1 {
-            color: rgb(235, 235, 235);
-            text-align: center;
-            padding: 18px;
-        }
+      p,
+      h1 {
+        color: rgb(235, 235, 235);
+        text-align: center;
+        padding: 18px;
+      }
 
-        p:first-child {
-            font-style: italic;
-            letter-spacing: 3px;
-            font-size: 40px;
-            text-shadow: -2.5px 3.5px 11.5px rgb(31, 30, 30);
-        }
+      p:first-child {
+        font-style: italic;
+        letter-spacing: 3px;
+        font-size: 50px;
+        text-shadow: -2.5px 3.5px 11.5px rgb(31, 30, 30);
+      }
 
-        h1 {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 65px;
-            text-shadow: -2.5px 3.5px 11.5px rgb(31, 30, 30);
-        }
+      h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 70px;
+        text-shadow: -2.5px 3.5px 11.5px rgb(31, 30, 30);
+      }
     }
 
     p {
-
-        .btn-primary {
-            background-color: $colorYelow;
-            border: unset;
-            text-transform: uppercase;
-            border-radius: 4px;
-        }
+      .btn-primary {
+        background-color: $colorYelow;
+        border: unset;
+        text-transform: uppercase;
+        border-radius: 4px;
+      }
     }
+  }
 }
 
 .services {
-    text-align: center;
+  text-align: center;
+  padding: 50px 0;
+
+  .row {
     padding: 50px 0;
 
-    .row {
-        padding: 50px 0;
+    .col-lg-12 {
+      h1 {
+        padding-bottom: 20px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
 
-
-        .col-lg-12 {
-
-            h1 {
-                padding-bottom: 20px;
-                font-size: 40px;
-                text-transform: uppercase;
-                font-weight: 700;
-            }
-
-            p {
-                padding-bottom: 20px;
-                font-style: italic;
-                font-weight: 300;
-                color: rgb(95, 95, 95);
-            }
-        }
+      p {
+        padding-bottom: 20px;
+        font-style: italic;
+        font-weight: 300;
+        color: $colorparagraph;
+      }
     }
+  }
 
-    .row {
-        .col-lg-4 {
+  .row {
+    .col-lg-4 {
+      .feature {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border: 3px solid $colorYelow;
+        border-radius: 50%;
 
-            .feature {
-                margin: 30px auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 70px;
-                height: 70px;
-                border: 2px solid $colorYelow;
-                border-radius: 50%;
-
-                a {
-
-                    i {
-                        color: $colorYelow;
-                        font-size: 35px;
-                    }
-                }
-            }
-
-            h2 {
-                padding-bottom: 20px;
-                font-weight: 700;
-            }
-
-            p {
-                font-weight: 300;
-                color: rgb(95, 95, 95);
-            }
+        a {
+          i {
+            color: $colorYelow;
+            font-size: 35px;
+          }
         }
+      }
+
+      h2 {
+        padding-bottom: 20px;
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        color: $colorparagraph;
+      }
     }
+  }
+}
+
+.portfolio {
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+
+  .col-lg-12 {
+    h1 {
+      padding: 40px 0 20px 0;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    p {
+      padding-bottom: 40px;
+      font-style: italic;
+      font-weight: 300;
+      color: $colorparagraph;
+    }
+  }
+  .thumbnail {
+    border: unset;
+    border-radius: unset;
+    background-color: unset;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+  .caption {
+    background-color: #fff;
+    margin-bottom: 50px;
+    h3 {
+      padding-top: 20px;
+      font-weight: 700;
+      font-size: 23px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      font-style: italic;
+      padding: 10px 0 25px 0;
+      color: $colorparagraph;
+    }
+  }
 }
